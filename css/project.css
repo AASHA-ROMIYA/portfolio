@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(29, 27, 27, 0.918);
+    user-select: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height:100%;
+
+}
+
+header{
+    color: aqua;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:70px;
+    border-bottom: 1px solid black;
+    padding:20px;
+}
+header ul li{
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    padding:20px;
+    font-size: 20px;
+    
+}
+header ul{
+    display: flex;
+  
+}
+header ul li a{
+    text-decoration: none;
+    color: aqua;
+}
+header h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header #menu{
+    height:50px;
+    width:50px;
+    display:none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+header #menu .menu1{
+    width:30px;
+    height:3px;
+    background-color: aqua;
+    margin: 3px;
+    border-radius: 2px;
+
+}
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100vw;
+    flex-direction: column;
+    
+
+}
+.project a{
+    margin: 10px;
+    color: aqua;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.project a:hover{
+        color:rgb(9, 255, 0);
+        text-decoration: underline;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  
+    header #menu{
+        display: flex;
+    }
+    header ul li{
+        display: flex;
+    }
+    
+    header ul{
+        width:150px;
+        height:700px;
+        background-color: rgba(129, 208, 233, 0.1);
+        margin-right:-720px;
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+.row1,.row2{
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.project{
+    margin: 20px;
+}
+.li1{
+    display:flex;
+
+}}

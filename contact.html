@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/proto.css">
+</head>
+<body>
+    <header>
+        <h3>Aasha</h3>
+        <ul id="menubar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="menu"> 
+            <div class="menu1"></div>
+            <div class="menu1"></div>
+            <div class="menu1"></div>
+        </div>
+      
+    </header>
+    <div class="contact">
+    <div class="email"><img src="email.png" alt=""><h4>aashasrinivasan64@.com</h4></div>
+    <div class="email"><img src="git.jfif" alt=""><h4><a href="https://github.com/AASHA-ROMIYA">Git Hub</a></h4></div>
+    <div class="email"><img src="linkein.png" alt=""><h4><a href="https://www.linkedin.com/in/aasha-s-999170250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkeIn</a></h4></div>
+    <div class="watsapp"><img src="watsapp.png" alt=""><h4>9345021450</h4></div>
+    <button>
+        Contact Me
+    </button>
+</div>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+        const menu=document.getElementById('menu');
+        const menubar=document.getElementById('menubar');
+        const body=document.querySelector('body');
+        menu.addEventListener('click',()=>{
+            menubar.style.marginRight="-300px";
+        });
+        menubar.addEventListener('click',()=>{
+            menubar.style.marginRight="-820px";
+        });
+    })
+    </script>
+    </html>

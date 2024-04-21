@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protofoliya HOME</title>
+    <link rel="stylesheet" href="css/proto.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h3>Aasha</h3>
+        <ul id="menubar">
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           
+        </ul>
+        <div id="menu"> 
+            <div class="menu1"></div>
+            <div class="menu1"></div>
+            <div class="menu1"></div>
+        </div>
+    </header>
+    <div class="intro">
+    <div class="info">
+        <h1>Hi, <span style="color:aqua" id="name">Friend!</span></h1><br>
+        <h2>I'm AASHA S</h2><br>
+        <h3>Web Developer</h3>
+    </div>
+    <div class="image">
+        <img src="image.png" alt="">
+    </div>
+</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    const menu=document.getElementById('menu');
+    const menubar=document.getElementById('menubar');
+    const body=document.querySelector('body');
+    menu.addEventListener('click',()=>{
+        menubar.style.marginRight="-300px";
+    });
+    menubar.addEventListener('click',()=>{
+        menubar.style.marginRight="-820px";
+    });
+})
+    // (function () {
+    //     var words = ["Friends","Guys","Sir","Madam" ],
+    //     i = 0;
+
+    //     setInterval(function(){ $('#name').fadeOut(function(){
+    //         $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+    //       }); }, 3000)
+    //   })();
+    function wordss(){
+    var words = ["Friends","Guys","Sir","Madam","Buddies","Chums"];
+    var word = Math.floor(Math.random() * 6);
+    const name = document.getElementById('name');
+    name.innerText = words[word]+"!";
+}
+
+setInterval(wordss, 5000);
+
+</script>
+</html>
